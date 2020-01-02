@@ -4,7 +4,10 @@ import seaborn as sns
 import pandas as pd
 import numpy as np
 
+#data set from https://www.ncdc.noaa.gov › stormevents
 dfs = pd.read_csv('StormEvents_details-ftp_v1.0_d2015_c20191116.csv')
+
+#data set from data_world
 dfp = pd.read_csv('police-tsopp-mi-QueryResult-2.csv')
 
 dfs = dfs[dfs['STATE'] == 'MICHIGAN']
